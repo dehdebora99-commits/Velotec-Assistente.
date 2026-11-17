@@ -53,7 +53,15 @@ voiceEnabled=localStorage.getItem('va-voice')==='1';render();setInterval(checkDu
 <script type="module">
 /* CONFIGURAÇÃO OPCIONAL: preencha com as credenciais do SEU NOVO projeto Firebase.
    Nunca coloque chaves de API de IA secretas neste arquivo. */
-const firebaseConfig=null;
+const firebaseConfig={
+  apiKey:"AIzaSyDOQkN6L7Rti-MabR-u025ekSOB_TeL8v0",
+  authDomain:"velotec-assistente.firebaseapp.com",
+  projectId:"velotec-assistente",
+  storageBucket:"velotec-assistente.firebasestorage.app",
+  messagingSenderId:"835522702005",
+  appId:"1:835522702005:web:c6023b8a17ad6b75f56cfc",
+  measurementId:"G-3XCNPZHVG7"
+};
 // Exemplo: const firebaseConfig={apiKey:"...",authDomain:"...",projectId:"...",appId:"..."};
 if(firebaseConfig){try{
  const {initializeApp}=await import('https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js');

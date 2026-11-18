@@ -1,13 +1,11 @@
 {
   "name": "Velotec Assistente",
   "short_name": "Velotec",
-  "description": "Agenda, lembretes e assistente pessoal Velotec",
-  "lang": "pt-BR",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#f5f7fb",
-  "theme_color": "#142e5d",
+  "background_color": "#f4f6fa",
+  "theme_color": "#10264b",
   "icons": [
     {
       "src": "./icon-192.png",

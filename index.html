@@ -1,10 +1,25 @@
 <!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#142e5d"><link rel="manifest" href="./manifest.webmanifest"><link rel="icon" type="image/png" sizes="192x192" href="./icon-192.png"><link rel="apple-touch-icon" href="./icon-192.png"><title>Velotec Assistente</title><style>
 :root{--navy:#142e5d;--gold:#c9a75c;--bg:#f5f7fb;--line:#dfe6f0;--text:#1e2c44}*{box-sizing:border-box}body{margin:0;font:15px system-ui,Arial;color:var(--text);background:var(--bg)}button,input,textarea,select{font:inherit}button{cursor:pointer}header{background:linear-gradient(120deg,#0d2148,#234e88);color:white;padding:18px 24px;display:flex;align-items:center;gap:14px;justify-content:space-between}header h1{margin:0;font-size:21px;letter-spacing:1px}header small{color:#e4d6b5}.mark{color:var(--gold);font:bold 38px Georgia}.layout{display:grid;grid-template-columns:220px minmax(0,1fr);min-height:calc(100vh - 85px)}aside{background:white;border-right:1px solid var(--line);padding:18px 12px}nav{display:grid;gap:7px}nav button{border:0;background:transparent;text-align:left;border-radius:10px;padding:13px;color:var(--text)}nav button.active,nav button:hover{background:#e9eff9;color:#143f7d}main{padding:24px;max-width:1150px;width:100%;margin:auto}.panel{background:white;border:1px solid var(--line);border-radius:16px;padding:20px;margin-bottom:17px;box-shadow:0 2px 14px #173a6810}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.metric{background:#edf3fc;border-radius:12px;padding:17px}.metric b{display:block;font-size:27px;color:var(--navy)}h2{margin:0 0 14px;font-size:21px}h3{margin:0 0 10px;font-size:16px}.muted{color:#69788e}.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.between{justify-content:space-between}.primary{border:0;background:var(--navy);color:white;border-radius:10px;padding:11px 15px}.secondary{border:1px solid var(--line);background:white;border-radius:10px;padding:10px 13px;color:var(--navy)}.danger{color:#a53644}.field{display:grid;gap:5px;margin-bottom:11px;font-weight:600;font-size:13px}input,textarea,select{padding:11px;border:1px solid #cfd9e7;border-radius:9px;width:100%;background:white;color:var(--text)}textarea{min-height:72px}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:0 13px}.wide{grid-column:1/-1}.item{padding:13px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:14px;align-items:center}.item:last-child{border:0}.pill{display:inline-block;background:#f6edda;color:#7e5c1f;border-radius:20px;padding:4px 9px;font-size:12px}.chat{height:340px;overflow:auto;display:flex;flex-direction:column;gap:12px;padding:14px;background:#f7f9fd;border-radius:12px;margin-bottom:12px}.bubble{max-width:85%;padding:12px;border-radius:13px;background:white;white-space:pre-wrap}.bubble.me{align-self:flex-end;background:#dce9fb}.bubble.bot{align-self:flex-start;border:1px solid var(--line)}.chatinput{display:flex;gap:8px}.chatinput input{flex:1}.hidden{display:none!important}.notice{background:#fff9ec;border-left:3px solid var(--gold);padding:12px;border-radius:7px}.settings{max-width:640px}#toast{position:fixed;bottom:18px;right:18px;background:#152e56;color:white;padding:14px;border-radius:12px;display:none;max-width:350px;z-index:5}button:disabled{opacity:.5;cursor:not-allowed}@media(max-width:700px){header{padding:13px}header h1{font-size:17px}.layout{display:block;min-height:0}aside{padding:8px;overflow:auto}nav{display:flex;min-width:max-content}nav button{white-space:nowrap;padding:10px}main{padding:12px}.grid{grid-template-columns:1fr 1fr}.formgrid{grid-template-columns:1fr}.wide{grid-column:auto}.panel{padding:15px}.chat{height:48vh}.item{align-items:flex-start;flex-direction:column}}
+
+/* Identidade Rosa Velotec — somente apresentação */
+:root{--navy:#9b5376;--gold:#c99b6b;--bg:#fff7fa;--line:#f0dce5;--text:#503b49}
+body{background:radial-gradient(circle at 95% 5%,#f9dce8 0,transparent 30%),linear-gradient(145deg,#fff9fb,#fdf1f6 55%,#fffafc);min-height:100vh}
+header{position:relative;overflow:hidden;background:linear-gradient(115deg,#9d5579,#c781a0 58%,#e7a7bb);box-shadow:0 6px 24px #9b537627;border-bottom:2px solid #eac7a1}
+header::after{content:'✿  ❀  ✿';position:absolute;right:8%;top:-8px;color:#fff6;letter-spacing:15px;font-size:49px;pointer-events:none;transform:rotate(-12deg)}
+header h1{letter-spacing:1.5px;text-shadow:0 1px 1px #70405850}header small{color:#fff1f5}
+.mark{position:relative;z-index:1;color:#f6d8a7;font:bold 38px Georgia,serif;text-shadow:0 2px 5px #733e5b}
+aside{background:linear-gradient(180deg,#fffafc,#fff3f8);border-color:var(--line)}nav button{transition:background .2s,transform .2s}nav button.active,nav button:hover{background:#f7dce8;color:#874363}nav button.active{box-shadow:inset 3px 0 #c782a0}
+.panel{border:1px solid #efdbe5;border-radius:20px;box-shadow:0 7px 26px #a85c7b12;background:#fffdfefa}
+.metric{background:linear-gradient(135deg,#fce9f1,#fff6f9);border:1px solid #f4dce6;border-radius:16px}.metric b{color:#995173}
+h2{color:#874562}.primary{background:linear-gradient(115deg,#a95880,#c47a9c);box-shadow:0 3px 10px #ae628026;border-radius:12px}.primary:hover{filter:brightness(1.04)}.secondary{border-color:#ecd4df;color:#915171;background:#fffafd;border-radius:12px}.secondary:hover{background:#fcebf2}
+input,textarea,select{border-color:#e9d3de;background:#fffefe}input:focus,textarea:focus,select:focus{outline:2px solid #d7a2b9;outline-offset:1px}
+.chat{background:linear-gradient(150deg,#fff6fa,#faedf3);border:1px solid #f1dce6;border-radius:18px}.bubble{border-radius:18px}.bubble.me{background:#f1cddf;color:#6f3e58}.bubble.bot{background:#fff;border-color:#efdae4}.pill{background:#fce8f0;color:#8c5270}.notice{background:#fff6ee;border-left-color:#d3a67e}#toast{background:#965271;box-shadow:0 6px 20px #71394b40;border:1px solid #eac5d4}
+@media(max-width:700px){header::after{font-size:28px;right:0;top:3px;letter-spacing:5px}header{padding:15px}aside{border-bottom:1px solid #edd6e0}nav button.active{box-shadow:inset 0 -3px #c782a0}.panel{border-radius:17px}}
 </style></head><body><header><div class="row"><span class="mark">V</span><div><h1>VELOTEC ASSISTENTE</h1><small>Sua agenda e lembretes pessoais</small></div></div><span id="status">Modo local</span></header><div class="layout"><aside><nav id="nav"></nav></aside><main><div id="view"></div></main></div><div id="toast"></div>
 <script>
 const K='velotec-assistente-v1';let dbData=readLocal(),tab='Início',cloudSave=null,recognition=null;let voiceEnabled=false;
 function readLocal(){try{let d=JSON.parse(localStorage.getItem(K));if(Array.isArray(d?.items))return d}catch(e){}return {items:[]}}
-function save(){localStorage.setItem(K,JSON.stringify(dbData));render();if(cloudSave)cloudSave()}
+function save(){localStorage.setItem(K,JSON.stringify(dbData));if(tab!=='Conversar')render();if(cloudSave)cloudSave()}
 const uid=()=>crypto.randomUUID?crypto.randomUUID():String(Date.now()+Math.random());
 const safe=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const pad=n=>String(n).padStart(2,'0');const localDate=d=>`${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
@@ -17,7 +32,7 @@ const navs=[['Início','⌂'],['Conversar','✦'],['Agenda','▦'],['Lembretes',
 function navTo(t){tab=t;render()}
 function render(){document.getElementById('nav').innerHTML=navs.map(([t,i])=>`<button class="${tab===t?'active':''}" onclick="navTo('${t}')">${i} &nbsp; ${t}</button>`).join('');let v='';
 if(tab==='Início'){let a=upcoming(today());v=`<h2>Olá! Como posso ajudar hoje? 💙</h2><div class="grid"><div class="metric">Compromissos hoje<b>${a.length}</b></div><div class="metric">Medicamentos hoje<b>${a.filter(x=>x.type==='med').length}</b></div><div class="metric">Lembretes cadastrados<b>${dbData.items.length}</b></div></div><div class="panel" style="margin-top:17px"><div class="row between"><h2>Minha agenda de hoje</h2><button class="primary" onclick="navTo('Conversar')">🎙 Conversar</button></div>${itemsHtml(a)||'<p class="muted">Nenhum compromisso para hoje.</p>'}</div><div class="panel"><h3>Cadastro rápido</h3>${formHtml()}</div>`}
-if(tab==='Conversar'){v=`<div class="panel"><h2>✦ Converse com sua assistente</h2><p class="muted">Peça para cadastrar, consultar ou organizar seus lembretes por texto ou voz.</p><div class="chat" id="chat"><div class="bubble bot">Olá! Você pode dizer: “Me lembra de levar os documentos amanhã às 8 horas” ou “O que tenho hoje?”.</div></div><form class="chatinput" onsubmit="sendChat(event)"><input id="chatText" placeholder="Escreva ou fale comigo..." required autocomplete="off"><button type="button" class="secondary" onclick="startMic()" title="Falar">🎙</button><button class="primary">Enviar</button></form><p class="muted" style="font-size:12px">Reconhecimento de voz depende do navegador. Esta versão interpreta comandos de agenda; não é uma IA conversacional geral.</p></div>`}
+if(tab==='Conversar'){v=`<div class="panel"><h2>✦ Converse com sua assistente</h2><p class="muted">Pergunte sobre qualquer data, consulte compromissos ou peça alterações por texto ou voz.</p><div class="chat" id="chat"><div class="bubble bot">Olá! Você pode dizer: “Me lembra de levar os documentos amanhã às 8 horas” ou “O que tenho hoje?”.</div></div><form class="chatinput" onsubmit="sendChat(event)"><input id="chatText" placeholder="Escreva ou fale comigo..." required autocomplete="off"><button type="button" class="secondary" onclick="startMic()" title="Falar">🎙</button><button class="primary">Enviar</button></form><p class="muted" style="font-size:12px">Reconhecimento de voz depende do navegador. Consultas por data, período, assunto e pessoa; confirma antes de alterar ou excluir. Não é uma IA geral.</p></div>`}
 if(tab==='Agenda'){let d=window.selectedDate||today();v=`<div class="panel"><div class="row between"><h2>Agenda inteligente</h2><button class="primary" onclick="newItem()">＋ Novo compromisso</button></div><label class="field" style="max-width:250px">Escolha a data<input type="date" value="${d}" onchange="window.selectedDate=this.value;render()"></label>${itemsHtml(upcoming(d))||'<p class="muted">Nenhum registro nesta data.</p>'}</div>`}
 if(['Lembretes','Medicamentos','Anotações'].includes(tab)){let type=tab==='Medicamentos'?'med':tab==='Anotações'?'note':null;let a=dbData.items.filter(i=>type?i.type===type:i.type!=='med'&&i.type!=='note').sort((a,b)=>a.date.localeCompare(b.date));v=`<div class="panel"><div class="row between"><h2>${tab}</h2><button class="primary" onclick="newItem('${type||'task'}')">＋ Cadastrar</button></div>${itemsHtml(a)||'<p class="muted">Nenhum registro cadastrado.</p>'}</div>`}
 if(tab==='Configurações'){v=`<div class="panel settings"><h2>Configurações</h2><p><b>Sincronização:</b> <span id="syncDescription">Os registros ficam salvos neste navegador até conectar o Firebase.</span></p><div class="row"><button class="primary" id="loginBtn" onclick="window.firebaseLogin?.()">Entrar com Google</button><button class="secondary" id="logoutBtn" onclick="window.firebaseLogout?.()">Sair</button></div><p class="muted">Para sincronizar entre aparelhos, configure um projeto Firebase no código, com Authentication e Firestore habilitados.</p><hr><label class="row"><input type="checkbox" style="width:auto" ${voiceEnabled?'checked':''} onchange="voiceEnabled=this.checked;localStorage.setItem('va-voice',voiceEnabled?'1':'0')"> Ler respostas em voz alta</label><p><button class="secondary" onclick="requestNotifications()">🔔 Permitir notificações neste aparelho</button></p><div class="notice">Nesta versão, alertas locais só podem ser verificados enquanto o aplicativo está aberto. Para notificações garantidas com o app fechado é necessário configurar envio push no servidor (FCM e agendamento). Para medicamentos, mantenha também um alarme confiável.</div><p><button class="secondary" onclick="exportData()">Exportar cópia dos dados</button></p></div>`}
@@ -32,18 +47,120 @@ function markDone(id){let i=dbData.items.find(x=>x.id===id);if(i){i.done=!i.done
 function toast(s){let el=document.getElementById('toast');el.textContent=s;el.style.display='block';setTimeout(()=>el.style.display='none',4500)}
 function speak(s){if(voiceEnabled&&'speechSynthesis'in window){speechSynthesis.cancel();let u=new SpeechSynthesisUtterance(s);u.lang='pt-BR';speechSynthesis.speak(u)}}
 function addBubble(s,who){let c=document.getElementById('chat');if(!c)return;let d=document.createElement('div');d.className='bubble '+who;d.textContent=s;c.appendChild(d);c.scrollTop=c.scrollHeight}
-function dayFromWord(s){let d=new Date();if(/\bamanh[ãa]\b/.test(s))d.setDate(d.getDate()+1);else if(/\bdepois de amanh[ãa]\b/.test(s))d.setDate(d.getDate()+2);return localDate(d)}
-function parseCommand(raw){let s=raw.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');let date=dayFromWord(s);let explicit=s.match(/\b(?:dia\s*)?(\d{1,2})[\/\-](\d{1,2})(?:[\/\-](\d{2,4}))?\b/);if(explicit){let year=explicit[3]?Number(explicit[3]):new Date().getFullYear();if(year<100)year+=2000;let d=new Date(year,Number(explicit[2])-1,Number(explicit[1]));if(d.getDate()!==Number(explicit[1])||d.getMonth()!==Number(explicit[2])-1)return {error:'Essa data não existe. Pode conferir?'};date=localDate(d)}else{let match=s.match(/\bdia\s+(\d{1,2})\b/);if(match){let d=new Date(),n=Number(match[1]);d.setDate(1);d.setDate(n);if(d<new Date(today()+'T00:00:00'))d.setMonth(d.getMonth()+1);date=localDate(d)}}
-let tm=s.match(/\b(?:as|a)\s*(\d{1,2})(?:[:h](\d{2}))?\s*(?:horas?|h)?\b/);let time=tm?pad(Number(tm[1]))+':'+pad(Number(tm[2]||0)):null;if(tm&&(Number(tm[1])>23||Number(tm[2]||0)>59))return {error:'O horário informado não é válido.'};
-let repeat=/todos os dias|todo dia|diariamente/.test(s)?'daily':/toda (segunda|terca|quarta|quinta|sexta|sabado|domingo)|toda semana|semanalmente/.test(s)?'weekly':'none';
-if(/o que (tenho|tem)|minha agenda|meus compromissos|meus lembretes|quais.*(hoje|amanha)/.test(s)){return {query:true,date:/amanha/.test(s)?dayFromWord('amanha'):date}}
-if(/lembra|lembrete|agenda|marca|cadastra|anota|tenho|tomar|remedio|medicamento|consulta|reuniao/.test(s)){let title=raw.replace(/^(me\s+)?(lembra|lembre|agende|agenda|marca|marque|cadastra|cadastre|anota|anote)(-me)?\s*(de|que|para)?\s*/i,'').replace(/\b(amanhã|hoje|depois de amanhã)\b/gi,'').replace(/\b(?:às|as)\s*\d{1,2}(?:[:h]\d{2})?\s*(?:horas?)?/gi,'').replace(/\b(?:dia\s*)?\d{1,2}[\/\-]\d{1,2}(?:[\/\-]\d{2,4})?\b/gi,'').replace(/\bdia\s+\d{1,2}\b/gi,'').replace(/\b(todos os dias|todo dia|diariamente|toda semana|semanalmente)\b/gi,'').trim().replace(/[.,]+$/,'').trim();return {create:true,title,date,time,repeat,type:/remedio|medicamento|comprimido|tomar/i.test(raw)?'med':'event'}}
-return {unknown:true}}
-function sendChat(e){e.preventDefault();let inp=document.getElementById('chatText'),raw=inp.value.trim();if(!raw)return;inp.value='';addBubble(raw,'me');let cmd=parseCommand(raw),answer='';
-if(cmd.query){let list=upcoming(cmd.date);answer=list.length?'Você tem '+list.length+' registro(s):\n'+list.map(x=>`${x.time} — ${x.title}`).join('\n'):'Não encontrei compromissos para essa data.'}
-else if(cmd.create){if(!cmd.time){answer='Qual horário? Para cadastrar com segurança, diga novamente incluindo o horário, por exemplo: “Me lembra de levar documentos amanhã às 8 horas”.'}else if(!cmd.title){answer='O que você quer que eu registre?'}else{let item={id:uid(),title:cmd.title,date:cmd.date,time:cmd.time,repeat:cmd.repeat,type:cmd.type,detail:'Cadastrado pela conversa',done:false};dbData.items.push(item);save();answer=`Registrei na agenda: ${item.title}, ${item.date.split('-').reverse().join('/')} às ${item.time}${item.repeat!=='none'?', com repetição':''}.`}}
-else answer=cmd.error||'Posso cadastrar lembretes e consultar sua agenda. Experimente: “Me lembra de levar os documentos amanhã às 8 horas”.';
-addBubble(answer,'bot');speak(answer)}
+// Interpretador local, sem API ou custo externo.
+const meses={janeiro:1,fevereiro:2,marco:3,abril:4,maio:5,junho:6,julho:7,agosto:8,setembro:9,outubro:10,novembro:11,dezembro:12};
+const diasSemana={domingo:0,segunda:1,terca:2,quarta:3,quinta:4,sexta:5,sabado:6};
+let pendingChat=null,lastChatItemId=null,lastChatQuery=null;
+const normalizeText=t=>String(t||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
+const formatDate=x=>String(x).split('-').reverse().join('/');
+function parseDateFromText(raw,{future=false}={}){
+ const s=normalizeText(raw),base=new Date(),yearNow=base.getFullYear();base.setHours(12,0,0,0);
+ const mk=(day,month,year)=>{const d=new Date(year,month-1,day,12);return d.getDate()===day&&d.getMonth()===month-1&&d.getFullYear()===year?localDate(d):null};
+ let m=s.match(/\b(?:dia\s+)?(\d{1,2})\s*(?:\/|\-|\s+de\s+)(\d{1,2}|janeiro|fevereiro|marco|abril|maio|junho|julho|agosto|setembro|outubro|novembro|dezembro)(?:\s*(?:\/|\-|\s+de\s+)(\d{4}))?\b/);
+ if(m){let day=+m[1],month=meses[m[2]]||+m[2],year=m[3]?+m[3]:yearNow,date=mk(day,month,year);if(!date)return {error:'Essa data não existe. Pode conferir?'};if(future&&!m[3]&&date<today())date=mk(day,month,year+1);return {date,explicit:true}}
+ if(/depois de amanha/.test(s)){base.setDate(base.getDate()+2);return {date:localDate(base),explicit:true}}
+ if(/\bamanha\b/.test(s)){base.setDate(base.getDate()+1);return {date:localDate(base),explicit:true}}
+ if(/\bhoje\b/.test(s))return {date:localDate(base),explicit:true};
+ if(/\b(proxima semana|semana que vem|essa semana|esta semana|semana atual)\b/.test(s)){
+  const delta=(base.getDay()+6)%7;base.setDate(base.getDate()-delta+(/proxima semana|semana que vem/.test(s)?7:0));let start=localDate(base);base.setDate(base.getDate()+6);return {start,end:localDate(base),explicit:true};
+ }
+ if(/\b(esse mes|este mes|mes atual|proximo mes|mes que vem)\b/.test(s)){
+  const next=/proximo mes|mes que vem/.test(s)?1:0;let a=new Date(yearNow,base.getMonth()+next,1,12),b=new Date(a.getFullYear(),a.getMonth()+1,0,12);return {start:localDate(a),end:localDate(b),explicit:true};
+ }
+ m=s.match(/\b(?:na\s+)?(proxima\s+)?(segunda|terca|quarta|quinta|sexta|sabado|domingo)(?:-feira)?\b/);
+ if(m){let delta=(diasSemana[m[2]]-base.getDay()+7)%7;if(delta===0||m[1])delta+=delta===0?7:0;base.setDate(base.getDate()+delta);return {date:localDate(base),explicit:true}}
+ m=s.match(/\b(?:dia\s+)(\d{1,2})\b/);
+ if(m){let day=+m[1],d=new Date(yearNow,base.getMonth(),day,12);if(d.getDate()!==day)return {error:'Essa data não existe neste mês.'};if(future&&localDate(d)<today())d=new Date(yearNow,base.getMonth()+1,day,12);return {date:localDate(d),explicit:true}}
+ m=s.match(/\b(?:em|de|para)\s+(janeiro|fevereiro|marco|abril|maio|junho|julho|agosto|setembro|outubro|novembro|dezembro)(?:\s+de\s+(\d{4}))?\b/);
+ if(m){let month=meses[m[1]],year=m[2]?+m[2]:yearNow;return {start:`${year}-${pad(month)}-01`,end:localDate(new Date(year,month,0,12)),explicit:true}}
+ return {date:today(),explicit:false};
+}
+function parseTimeFromText(raw){const s=normalizeText(raw);let m=s.match(/\b(?:as|a|para as|pras|pelas)\s*(\d{1,2})(?:[:h](\d{1,2}))?\s*(?:horas?|hrs?)?\b/);if(!m)m=s.match(/\b(\d{1,2})[:h](\d{2})\b/);if(!m)return null;let h=+m[1],min=+(m[2]||0);return h<24&&min<60?pad(h)+':'+pad(min):'invalid'}
+function parseOffsets(raw){const s=normalizeText(raw),offsets=[];
+ const add=n=>{if(Number.isFinite(n)&&n>=0&&!offsets.includes(n))offsets.push(n)};
+ for(const m of s.matchAll(/(?:\b(\d+)\s*(dias?|horas?|minutos?)\s*antes\b|\bantes\s*(?:de|das?)?\s*(\d+)\s*(dias?|horas?|minutos?)\b)/g)){
+  const n=+(m[1]||m[3]),unit=m[2]||m[4];add(n*(unit.startsWith('dia')?1440:unit.startsWith('hora')?60:1));
+ }
+ if(/\b(um|uma)\s+dia\s+antes\b/.test(s))add(1440);
+ if(/\b(uma|um)\s+hora\s+antes\b/.test(s))add(60);
+ if(/\b(na hora|no horario|no momento)\b/.test(s))add(0);
+ return offsets.sort((a,b)=>b-a);
+}
+function cleanTitle(raw){return raw.replace(/^(?:oi\s+)?(?:velotec[,!]?\s*)?(?:(?:por favor[, ]*)?)(?:me\s+)?(?:lembre|lembra|lembrar|agende|agenda|marque|marca|cadastre|cadastra|anote|anota)\s*(?:-me)?\s*(?:de|que|para)?\s*/i,'')
+ .replace(/\b(?:dia\s*)?\d{1,2}\s*(?:\/|\-|\s+de\s+)(?:\d{1,2}|janeiro|fevereiro|março|abril|maio|junho|julho|agosto|setembro|outubro|novembro|dezembro)(?:\s*(?:\/|\-|\s+de\s+)\d{4})?\b/gi,'')
+ .replace(/\b(?:hoje|amanhã|depois de amanhã|próxima semana|semana que vem)\b/gi,'')
+ .replace(/(?:às|as)\s*\d{1,2}(?:[:h]\d{1,2})?\s*(?:horas?)?/gi,'')
+ .replace(/\b(?:me\s+)?(?:avise|avisa|lembre|lembra)\s+(?:um|uma|dois|duas|\d+)\s*(?:dias?|horas?|minutos?)\s*antes.*$/i,'')
+ .replace(/\b(?:me\s+)?(?:avise|avisa|lembre|lembra)\s+(?:na hora|no horário).*$/i,'')
+ .replace(/\b(?:todos os dias|todo dia|diariamente|toda semana|semanalmente)\b/gi,'')
+ .replace(/\s+/g,' ').replace(/^[\s,.:;-]+|[\s,.:;-]+$/g,'').trim()}
+function matchesPeriod(i,p){if(p.start)return i.date<=p.end&&(i.repeat==='daily'||i.repeat==='weekly'||i.date>=p.start);return occurs(i,p.date)}
+function searchItems(raw,p){const s=normalizeText(raw);let type=/medicamento|remedio|comprimido/.test(s)?'med':/consulta/.test(s)?'consulta':/reuniao/.test(s)?'reuniao':null;
+ let person=null;const pm=s.match(/(?:da|do|para|com)\s+(minha mae|meu pai|[a-z]+)\b/);if(pm&&!['dia','mes','semana','hoje','amanha'].includes(pm[1]))person=pm[1];
+ let items=dbData.items.filter(i=>matchesPeriod(i,p)&&(!i.done||i.repeat));
+ if(type)items=items.filter(i=>type==='med'?i.type==='med':normalizeText(i.title+' '+(i.detail||'')).includes(type));
+ if(person)items=items.filter(i=>normalizeText(i.title+' '+(i.detail||'')).includes(person));
+ return items.sort((a,b)=>(a.date+a.time).localeCompare(b.date+b.time));
+}
+function listAnswer(raw){let p=parseDateFromText(raw);if(p.error)return p.error;let items=searchItems(raw,p);lastChatQuery=p;
+ const label=p.start?`de ${formatDate(p.start)} a ${formatDate(p.end)}`:`em ${formatDate(p.date)}`;
+ if(!items.length)return `Não encontrei compromissos cadastrados ${label} com esses critérios.`;
+ let lines=items.slice(0,35).map(i=>`${formatDate(i.date)} às ${i.time} — ${i.title}${i.repeat!=='none'?' (recorrente)':''}`);
+ return `Encontrei ${items.length} registro(s) ${label}:\n${lines.join('\n')}${items.length>35?'\nMostrando os primeiros 35 registros.':''}`;
+}
+function identifyItem(raw){let s=normalizeText(raw);const date=parseDateFromText(raw),all=dbData.items.filter(i=>!i.done||i.repeat);
+ let candidates=all;
+ if(date.explicit&&!date.error)candidates=candidates.filter(i=>matchesPeriod(i,date));
+ let topic=s.match(/(?:consulta|reuniao|remedio|medicamento|dentista|exame|pagamento|trabalho|escola)(?:\s+(?:da|do|de)\s+\w+)?/);
+ if(topic)candidates=candidates.filter(i=>normalizeText(i.title).includes(topic[0].split(' ')[0]));
+ if(candidates.length===1)return {item:candidates[0]};
+ if(!date.explicit&&!topic&&lastChatItemId){let item=all.find(i=>i.id===lastChatItemId);if(item)return {item}}
+ if(candidates.length>1)return {error:`Encontrei ${candidates.length} registros possíveis. Diga o nome e a data do compromisso para eu identificar o correto.`};
+ return {error:'Não encontrei um compromisso que corresponda. Diga o nome e a data para eu localizar.'};
+}
+function describeItem(i){return `${i.title}, dia ${formatDate(i.date)} às ${i.time}`}
+function replyChat(raw){let s=normalizeText(raw).trim();
+ if(pendingChat){
+  if(/^(nao|não|cancela|cancelar|desiste|deixa pra la)\b/.test(s)){pendingChat=null;return 'Tudo bem, não alterei nada.'}
+  if(/^(sim|confirmo|pode|ok|isso|salvar|confirma)\b/.test(s)){
+   let action=pendingChat;pendingChat=null;
+   if(action.kind==='create'){dbData.items.push(action.item);lastChatItemId=action.item.id;save();return `Pronto! Cadastrei ${describeItem(action.item)}.`}
+   if(action.kind==='delete'){dbData.items=dbData.items.filter(i=>i.id!==action.id);save();lastChatItemId=null;return 'Compromisso excluído com sua confirmação.'}
+   if(action.kind==='edit'){let idx=dbData.items.findIndex(i=>i.id===action.id);if(idx<0)return 'Esse compromisso não está mais cadastrado.';dbData.items[idx]={...dbData.items[idx],...action.patch};lastChatItemId=action.id;save();return `Atualizei: ${describeItem(dbData.items[idx])}.`}
+  }
+  return 'Tenho uma alteração aguardando confirmação. Responda “sim” para confirmar ou “não” para cancelar.';
+ }
+ if(/\b(o que|quais|quanto|quantos|mostra|mostrar|liste|lista|tenho|tem|existe|procura|busca|encontra|quando foi|quando e|como esta)\b/.test(s)&&/agenda|compromiss|marcad|consult|reuni|remedio|medicamento|lembrete|hoje|amanha|semana|mes|dia|sexta|segunda|terca|quarta|quinta|sabado|domingo/.test(s))return listAnswer(raw);
+ if(/\b(cancela|cancelar|exclui|excluir|apaga|apagar|remove|remover)\b/.test(s)){
+  let found=identifyItem(raw);if(found.error)return found.error;pendingChat={kind:'delete',id:found.item.id};return `Quer mesmo excluir ${describeItem(found.item)}? Responda sim ou não.`;
+ }
+ if(/\b(muda|mude|altera|alterar|troca|trocar|remarca|remarcar|adiar|antecipa)\b/.test(s)){
+  let found=identifyItem(raw);if(found.error)return found.error;
+  let newTime=parseTimeFromText(raw),date=parseDateFromText(raw,{future:true});if(newTime==='invalid'||date.error)return 'A data ou o horário informado não é válido.';
+  let patch={};if(newTime)patch.time=newTime;if(date.explicit&&date.date)patch.date=date.date;
+  if(!Object.keys(patch).length)return 'Para qual data ou horário você quer mudar? Exemplo: “Muda a consulta de terça para as 15 horas”.';
+  pendingChat={kind:'edit',id:found.item.id,patch};return `Quer alterar ${describeItem(found.item)} para ${formatDate(patch.date||found.item.date)} às ${patch.time||found.item.time}? Responda sim ou não.`;
+ }
+ if(/\b(lembra|lembre|lembrar|agenda|agende|marca|marque|cadastra|cadastre|anota|anote|tenho|consulta|reuniao|tomar)\b/.test(s)){
+  let p=parseDateFromText(raw,{future:true}),time=parseTimeFromText(raw);if(p.error)return p.error;
+  if(!time)return 'Qual é o horário do compromisso? Escreva novamente com a data e o horário, por exemplo: “Marque consulta dia 25 de novembro às 14h”.';
+  if(time==='invalid')return 'Esse horário não é válido. Pode conferir?';
+  if(!p.date)return 'Para cadastrar, informe uma data específica.';
+  let title=cleanTitle(raw);if(!title)return 'O que você quer que eu registre? Inclua o assunto, a data e o horário.';
+  let repeat=/todos os dias|todo dia|diariamente/.test(s)?'daily':/toda semana|semanalmente/.test(s)?'weekly':'none';
+  let offsets=parseOffsets(raw);
+  let item={id:uid(),title,date:p.date,time,repeat,type:/remedio|medicamento|comprimido|tomar/.test(s)?'med':'event',detail:'Cadastrado pela conversa',done:false};
+  if(offsets.length)item.alertOffsets=offsets;
+  let duplicate=dbData.items.find(i=>normalizeText(i.title)===normalizeText(title)&&i.date===p.date&&i.time===time);
+  if(duplicate)return `Esse compromisso já está cadastrado: ${describeItem(duplicate)}. Não criei uma duplicata.`;
+  let conflict=dbData.items.filter(i=>i.date===p.date&&i.time===time&&!i.done);
+  pendingChat={kind:'create',item};
+  let alerts=offsets.length?` Avisos: ${offsets.map(n=>n===0?'na hora':n%1440===0?`${n/1440} dia(s) antes`:n%60===0?`${n/60} hora(s) antes`:`${n} minuto(s) antes`).join(', ')}.`:'';
+  return `Posso cadastrar ${describeItem(item)}?${alerts}${conflict.length?' Atenção: já existe outro compromisso nesse horário.':''} Responda sim para confirmar ou não para cancelar.`;
+ }
+ return 'Posso consultar sua agenda por data, semana, mês, assunto ou pessoa, além de cadastrar, alterar e excluir compromissos com sua confirmação. Exemplo: “O que tenho na agenda dia 16 de novembro?”';
+}
+function sendChat(e){e.preventDefault();let inp=document.getElementById('chatText'),raw=inp?.value.trim();if(!raw)return;inp.value='';addBubble(raw,'me');let answer='';try{answer=replyChat(raw)}catch(err){console.error(err);answer='Não consegui interpretar esse pedido. Pode reformular?'}addBubble(answer,'bot');speak(answer)}
 function startMic(){let R=window.SpeechRecognition||window.webkitSpeechRecognition;if(!R){toast('Este navegador não oferece reconhecimento de voz. Use o campo de texto ou Chrome no Android.');return}recognition=new R();recognition.lang='pt-BR';recognition.interimResults=false;recognition.onresult=e=>{let inp=document.getElementById('chatText');if(inp)inp.value=e.results[0][0].transcript};recognition.onerror=e=>toast('Não consegui ouvir: '+e.error);recognition.start()}
 async function requestNotifications(){
  if(!('Notification' in window)){toast('Este navegador não suporta notificações.');return}
@@ -94,9 +211,27 @@ function checkDue(){
   showDueNotification(i,stamp);
  }
 }
+// Avisos adicionais: executados somente enquanto a página estiver em execução.
+function checkExtraAlerts(){
+ const nowMs=Date.now();
+ for(const i of dbData.items){
+  if(i.done||!Array.isArray(i.alertOffsets)||!i.alertOffsets.length||!i.date||!i.time)continue;
+  const base=new Date(i.date+'T'+i.time+':00').getTime();if(!Number.isFinite(base))continue;
+  for(const offset of i.alertOffsets){
+   if(offset===0)continue; // aviso no horário já é emitido por checkDue
+   if(!Number.isFinite(offset)||offset<0)continue;
+   const due=base-offset*60000,delay=nowMs-due,stamp='extra:'+i.id+':'+offset+':'+i.date;
+   if(delay>=0&&delay<=120000&&!notified.has(stamp)){
+    notified.add(stamp);toast('🔔 '+i.title);showDueNotification(i,stamp);
+   }
+  }
+ }
+}
 voiceEnabled=localStorage.getItem('va-voice')==='1';render();
 checkDue();
 setInterval(checkDue,5000);
+setInterval(checkExtraAlerts,5000);
+checkExtraAlerts();
 document.addEventListener('visibilitychange',()=>{if(!document.hidden)checkDue()});
 window.addEventListener('focus',checkDue);
 </script>

@@ -1,0 +1,11 @@
+VELOTEC ASSISTENTE — ROSA + CONSULTA INTELIGENTE
+
+1. Faça backup em Configurações > Exportar cópia dos dados.
+2. Envie index.html, sw.js e manifest.webmanifest ao repositório GitHub Pages, substituindo os arquivos de mesmo nome. Ícones podem permanecer como estão.
+3. Atualize o PWA (às vezes é necessário fechar e reabrir).
+4. Teste consultas: O que tenho na agenda dia 16 de novembro? / O que tenho na próxima semana? / Quais consultas tenho em dezembro?
+5. Teste criação, alteração e exclusão: o sistema deve pedir confirmação.
+
+AVISOS: notificações locais exigem que o app esteja em execução; push com o app completamente fechado exige servidor externo.
+O interpretador é baseado em regras locais e não é IA generativa.
+Dados e configuração Firebase foram preservados no HTML.
